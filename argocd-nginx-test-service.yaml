@@ -5,7 +5,7 @@ metadata:
   namespace: argocd-nginx-test
 spec:
   selector:
-    app:  argocd-nginx-test
+    app: argocd-nginx-test
   ports:
   - port: 80
     targetPort: 80
