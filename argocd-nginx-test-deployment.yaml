@@ -38,7 +38,7 @@ spec:
               mountPath: /usr/share/nginx/html/teste.html
               subPath: teste.html
       volumes:
-        - name: index.html
+        - name: argocd-nginx-test
           configMap:
             name: argocd-nginx-test
   selector:
