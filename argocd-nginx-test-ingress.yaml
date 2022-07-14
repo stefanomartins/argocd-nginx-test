@@ -7,7 +7,7 @@ metadata:
     name: argocd-nginx-test
 spec:
   rules:
-  - host: argocd-nginx-test
+  - host: argocd-nginx-test.example.com
     http:
       paths:
       - pathType: Prefix
