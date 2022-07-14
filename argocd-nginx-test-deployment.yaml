@@ -33,6 +33,14 @@ spec:
             httpGet:
               path: /
               port: 80
+          volumeMounts:
+            - name: argocd-nginx-test
+              mountPath: /usr/local/share/nginx/html/teste.html
+              subPath: teste.html
+      volumes:
+        - name: index.html
+          configMap:
+            name: argocd-nginx-test
   selector:
     matchLabels:
       app: argocd-nginx-test
