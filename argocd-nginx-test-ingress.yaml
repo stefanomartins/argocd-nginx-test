@@ -6,6 +6,7 @@ metadata:
   labels:
     name: argocd-nginx-test
 spec:
+  ingressClassName: nginx
   rules:
   - host: argocd-nginx-test.example.com
     http:
