@@ -5,6 +5,7 @@ metadata:
   namespace: argocd-nginx-test
 spec:
   replicas: 1
+  revisionHistoryLimit: 3
   strategy:
     type: RollingUpdate
   template:
