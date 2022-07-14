@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-nginx-test
+  namespace: argocd-nginx-test
+  labels:
+    name: argocd-nginx-test
+spec:
+  rules:
+  - host: argocd-nginx-test
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: argocd-nginx-test
+            port: 
+              number: 80
